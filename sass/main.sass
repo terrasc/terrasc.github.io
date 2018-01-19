@@ -55,9 +55,8 @@ body
 .header-olympics
 	text-align: center
 	text-transform: uppercase
-	background-size: cover
 	font-family: beaver-ex
-	background-color: #d8b95d
+	background-color: $accent
 
 .text-head
 	font-size: 40px
@@ -72,28 +71,45 @@ body
 	width: auto
 
 .source-file
-	margin-top: 120px
-	a 
-	 text-decoration: none
-	 color: #000
-	 font-size: 22px
-	 display: block 
-	 text-align: center
-	 border: solid 1px #000
-	 width: 50%
+	margin: 120px 0 0 140px
 
-.form-main
-	transition: .2s ease
 
-.form-main:hover
-	background-color: #d8b95d
+.source-file a 
+	text-decoration: none
+	width: 200px
+	font-weight: 400
+	color: #fff
+	font-size: 18px
+	text-transform: uppercase
+	padding: 22px
+	background: #444359
+	border-left: 1px solid #fff
+	-o-transition: background-color 0.5s ease-in-out
+	-moz-transition: background-color 0.5s ease-in-out
+	-ms-transition: background-color 0.5s ease-in-out
+	-webkit-transition: background-color 0.5s ease-in-out
+  transition: background-color 0.5s ease-in-out
+	letter-spacing: 2px
+	&:hover
+		background-color: lighten($fund, 10%)
+		&::after
+			opacity: .22
+			&:active
+				background-color: darken($fund, 11%)
+				opacity: .32
 	
+	
+
 .information-text
 	margin-top: 120px
 
 .information-text h3,p
 	margin: 0
 	padding: 0
+
+.information-text h3 ,i 
+	font-size: 30px
+	padding: 7px
 
 .sponsor-manul
 	font-size: 40px 
@@ -120,7 +136,7 @@ body
 .accordion 
   position: relative
   background-color: #f3f3f3
-
+		
 .accordion dl dt a 
 	text-decoration: none
 
@@ -133,9 +149,16 @@ body
   display: block
   text-decoration: none
   color: #fff
+  border-bottom: 1px solid #fff
   -webkit-transition: background-color 0.5s ease-in-out
   transition: background-color 0.5s ease-in-out
-  border-bottom: 1px solid #fff
+  
+
+
+.accordionTitle:active
+.accordionTitle.is-expanded 
+  background-color: $fund
+
 
 .accordionTitle:before,
 .accordion__Heading:before 
@@ -247,7 +270,7 @@ body
 	text-align: center
 
 #about-sponsor
-	background-color: #d8b95d
+	background-color: $accent
 	margin-top: 140px
 	color: #fff
 
@@ -282,7 +305,11 @@ body
 	margin-top: 120px
 
 
-		
+
+
+		 
+
+
 
 
 @import "media" // Всегда в конце
