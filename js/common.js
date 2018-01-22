@@ -11,7 +11,7 @@ $(document).ready(function() {
       }
     });
 
-    var dt = "january 29 2018 20:22:50";
+    var dt = "january 25 2018 20:22:50";
     var first = new Date(dt);
     var last = Date.now();
     var remaining = first - last;
