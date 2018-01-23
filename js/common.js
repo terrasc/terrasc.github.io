@@ -4,15 +4,14 @@ $(document).ready(function() {
     clock = $(".clock").FlipClock({
       clockFace: "DailyCounter",
       autoStart: false,
-      coutdown: true,
       callbacks: {
         stop: function() {
-          $(".message").html("время прошло")
+          $(".message").html("время вышло")
         }
       }
     });
 
-    var dt = "january 23 2018 20:22:50";
+    var dt = "january 23 2018 16:57:50";
     var first = new Date(dt);
     var last = Date.now();
     var remaining = first - last;
@@ -20,7 +19,7 @@ $(document).ready(function() {
 
     clock.setTime(remaining);
     clock.setCountdown(true);
-    clock.start();
+    clock.stop();
 
   });
 
