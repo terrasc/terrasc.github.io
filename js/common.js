@@ -4,14 +4,15 @@ $(document).ready(function() {
     clock = $(".clock").FlipClock({
       clockFace: "DailyCounter",
       autoStart: false,
+      coutdown: true,
       callbacks: {
         stop: function() {
-          $(".message").html("The clock has stopped!")
+          $(".message").html("время прошло")
         }
       }
     });
 
-    var dt = "january 25 2018 20:22:50";
+    var dt = "january 23 2018 20:22:50";
     var first = new Date(dt);
     var last = Date.now();
     var remaining = first - last;
