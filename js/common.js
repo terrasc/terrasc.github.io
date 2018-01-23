@@ -11,12 +11,6 @@ $(document).ready(function() {
       }
     });
 
-    var dt = "january 23 2018 16:57:50";
-    var first = new Date(dt);
-    var last = Date.now();
-    var remaining = first - last;
-    remaining /=2000;
-
     clock.setTime(remaining);
     clock.setCountdown(true);
     clock.stop();
