@@ -55,7 +55,7 @@ body
 .header-olympics
 	text-align: center
 	text-transform: uppercase
-	font-family: beaver-ex
+	font-family: robot-example
 	background-color: $accent
 
 .text-head
@@ -71,7 +71,9 @@ body
 	width: auto
 
 #main-content
-	background-color: #F5F5F5
+	background: #ece9e6 /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #ece9e6, #ffffff) /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #ece9e6, #ffffff)
 
 .source-file
 	margin-top: 120px 
@@ -288,8 +290,35 @@ body
 	margin-bottom: 100px
 
 #footer 
-	background-color: #000
+  background: #7474bf/* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #7474bf, #348ac7) /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #7474bf, #348ac7)
+
+.about-us , .contact
+	margin-top: 100px
 	color: #fff
+	h2 
+		letter-spacing: 2px
+		font-weight: 400
+		 
+
+.contact
+	margin-bottom: 100px
+
+.about-us h2:after
+  height: 2px
+  display: block
+  width: 165px
+  background: #fff
+  content: ''
+
+
+.contact h2::after
+  height: 2px
+  display: block
+  width: 120px
+  background: #fff
+  content: ''
 
 .mail-me i
 	padding: 7px 
@@ -305,8 +334,6 @@ body
 
 .footer-wrap 
 	margin-top: 120px
-
-
 
 		 
 
