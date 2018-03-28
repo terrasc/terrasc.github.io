@@ -76,3 +76,8 @@ switchAccordion = function(e) {
     accordionToggles[i].addEventListener('click', switchAccordion, false);
   }
 })();
+
+$(window).on('load', function(){
+$(".loaderInner").fadeOut();
+$(".loader").delay(400).fadeOut("slow");
+});
